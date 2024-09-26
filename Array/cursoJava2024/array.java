@@ -1,6 +1,6 @@
 package cursoJava2024;
 
-public class array {
+public class Array {
 
 	public int soma(int a, int b) {
 		return a + b;
@@ -20,7 +20,7 @@ public class array {
 
 	public static void main(String[] args) {
 
-		array uti = new array();
+		Array uti = new Array();
 
 		System.out.println("A Soma de 5 e 3 é: " + uti.soma(5, 3));
 		System.out.println("A Subtração de 8 menos 2 é: " + uti.subtra(8, 2));
