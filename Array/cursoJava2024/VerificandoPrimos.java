@@ -15,7 +15,7 @@ public class VerificandoPrimos {
 	}
 
 	public static void main(String[] args) {
-		int numero = 7;
+		int numero = 337;
 		if (primo(numero)) {
 			System.out.println(numero + " é um número primo");
 		} else {
