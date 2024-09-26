@@ -1,3 +1,6 @@
+
+
+
 package cursoJava2024;
 
 public class CopasDoMundo {
@@ -12,7 +15,7 @@ public class CopasDoMundo {
 				continue;
 			}
 
-			System.out.println(ano);
+			System.out.print(ano + " ");
 
 			ano += 4;
 		}
