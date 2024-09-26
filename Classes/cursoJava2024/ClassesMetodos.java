@@ -20,15 +20,24 @@ public class ClassesMetodos {
 	static String texto2 = "Bruna";
 
 	// Método 4: Calcula o fatorial do número 4
-	public int fatorial ( int numero ) {
-		if ( numero == 0 || numero == 1 ) {
+	public int fatorial(int numero) {
+		if (numero == 0 || numero == 1) {
 			return 1;
-	}
-	return numero * fatorial(numero - 1); 
-		
+		}
+		return numero * fatorial(numero - 1);
+
 	}
 
 	// Método 5: Encontra o maior número em um array de inteiros
+	public int maiorNumero(int[] numeros) {
+		int maior = numeros[0];
+		for (int numero : numeros) {
+			if (numero > maior) {
+				maior = numero;
+			}
+		}
+		return maior;
+	}
 
 	// Este método executa outros métodos!
 	public static void main(String[] args) {
@@ -41,6 +50,7 @@ public class ClassesMetodos {
 		System.out.println("O número 4 é par? " + util.ehPar(4));
 		System.out.println("Nome completo: " + texto2.substring(0) + " " + texto1.substring(0));
 		System.out.println("O fatorial de 5 é: " + util.fatorial(5));
-
+		int [] numeros = {1, 5, 6, 8, 44};
+		System.out.println("O maior numero do Array é: " + util.maiorNumero(numeros));
 	}
 }
