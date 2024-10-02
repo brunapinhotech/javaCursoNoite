@@ -16,10 +16,11 @@ public class ContaBancaria {
 			saldo += valor; // saldo = saldo + valor;
 			System.out.println("Depósito de R$ " + valor + " realizado!");
 		} else {
-			
-			System.out.println("Valor de depósito inválido!"); }
-					
-			}
+
+			System.out.println("Valor de depósito inválido!");
+		}
+
+	}
 
 	// Método para sacar dinheiro da conta:
 	public void sacar(double valor) {
@@ -30,9 +31,9 @@ public class ContaBancaria {
 			System.out.println("Saque inválido: saldo insuficiente ou valor negativo!");
 		}
 	}
-	//Método público para consultar o saldo (getter):
+
+	// Método público para consultar o saldo (getter):
 	public double getSaldo() {
 		return saldo;
 	}
-	
 }
